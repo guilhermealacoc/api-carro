@@ -1,7 +1,9 @@
 require("dotenv").config({ path: "variaveis.env" });
 const express = require("express");
 const cors = require("cors");
-
+/*
+Para usar raw Json basta adicionar isto antes de importar as rotas -> server.use(bodyParser.json())
+*/
 const routes = require("./routes");
 const bodyParser = require("body-parser");
 
